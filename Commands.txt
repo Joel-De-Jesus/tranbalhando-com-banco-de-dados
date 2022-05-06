@@ -1,0 +1,24 @@
+Fazer uma consulta usando o INNER JOIN relacionando 3 tabelas ou mais.
+
+SELECT f.nome funcionario, p.nome projecto, fc.nome funcao, fc.salario, t.dt_entrada, t.dt_saida FROM funcionario f INNER JOIN projecto p INNER JOIN funcao fc INNER JOIN trabalha t WHERE f.id = t.funcionario_id AND p.id = t.projecto_id AND fc.id = t.funcao_id
+____________________________________________________
+
+Fazer uma consulta usando o LEFT JOIN relacionando 2 tabelas;
+
+SELECT * FROM departamento d LEFT JOIN funcionario f ON d.id = f.departamento_id;
+____________________________________________________
+
+
+Fazer uma consulta usando o RIGHT JOIN relacionando 2 tabelas;
+
+SELECT * FROM funcionario f RIGHT JOIN genero g ON f.genero_id = g.id;
+
+_______________________________________________________
+
+
+Criar uma base de dados complexa com pelomenos um gatilho (trigger);
+
+As 3 consultas devem ser feitas usando a nossa base de dados;
+
+
+
